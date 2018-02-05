@@ -23,3 +23,13 @@
 # All that matters is that your final data is written to an SQLite database
 # called "data.sqlite" in the current working directory which has at least a table
 # called "data".
+
+require 'watir'
+
+browser = Watir::Browser.new
+
+browser.goto('http://oms.co.ocean.nj.us:8087/IML')
+
+puts browser.title
+
+browser.close
